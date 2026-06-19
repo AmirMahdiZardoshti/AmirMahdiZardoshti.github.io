@@ -5,7 +5,7 @@
 <title>GPMLFF Workshop 2026</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,30 +21,33 @@
     <a href="#about">About</a>
     <a href="#speakers">Speakers</a>
     <a href="#schedule">Schedule</a>
+    <a href="#venue">Venue</a>
     <a href="#team">Team</a>
-    <a href="#registration">Registration</a>
+    <a href="#submission" class="btn">Submission</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
+
   <div class="overlay"></div>
 
   <div class="hero-content">
 
-    <div class="badge">University of Luxembourg • July 13–15, 2026</div>
+    <div class="tag">University of Luxembourg • July 13–15, 2026</div>
 
     <h1>
-      General-Purpose Machine-Learned Force Fields
+      General-Purpose Machine-Learned Force Fields<br>
       in Theory and Practice
     </h1>
 
-    <p class="subtitle">
-      Machine learning for chemistry and materials simulations
+    <p>
+      A scientific workshop on machine learning for atomistic simulations,
+      bridging quantum chemistry, materials science, and data-driven modeling.
     </p>
 
     <div class="status">
-      🔴 Registration OPEN
+      🟢 Registration OPEN
     </div>
 
   </div>
@@ -52,11 +55,31 @@
 
 <!-- ABOUT -->
 <section id="about" class="section">
+
   <h2>About the Workshop</h2>
 
   <p>
-    This workshop brings together researchers developing and applying machine-learned force fields for atomistic simulations in chemistry and materials science. The goal is to deepen understanding, share methods, and build a collaborative community.
+    This workshop brings together researchers developing and applying general-purpose machine-learned force fields for atomistic simulations in chemistry and materials science. Participants will explore theoretical foundations, symmetry-aware architectures, training strategies, and deployment in real research workflows. The goal is to deepen understanding, encourage broader adoption, and foster a collaborative scientific community around data-driven force fields.
   </p>
+
+  <div class="grid2">
+
+    <div class="card soft">
+      <h3>Where</h3>
+      <p>University of Luxembourg</p>
+      <p>Hybrid (On-site + Online)</p>
+    </div>
+
+    <div class="card soft">
+      <h3>Format</h3>
+      <ul>
+        <li>Invited Talks</li>
+        <li>Hands-on Sessions</li>
+        <li>Poster Session</li>
+      </ul>
+    </div>
+
+  </div>
 
 </section>
 
@@ -79,6 +102,18 @@
       <p>University of Cambridge</p>
     </div>
 
+    <div class="card">
+      <img src="images/prof3.jpg">
+      <h3>Dr. Stefan Chmiela</h3>
+      <p>TU Berlin</p>
+    </div>
+
+    <div class="card">
+      <img src="images/prof4.jpg">
+      <h3>Dr. Leonardo Medrano</h3>
+      <p>TU Dresden</p>
+    </div>
+
   </div>
 
 </section>
@@ -86,13 +121,13 @@
 <!-- TEAM -->
 <section id="team" class="section">
 
-  <h2>Organizing Team</h2>
+  <h2>Organizing Committee</h2>
 
   <div class="grid">
 
     <div class="card">
       <img src="images/team1.jpg">
-      <h3>Alexandre Tkatchenko</h3>
+      <h3>Prof. Alexandre Tkatchenko</h3>
       <p>Organizer</p>
     </div>
 
@@ -106,22 +141,26 @@
 
 </section>
 
-<!-- REGISTRATION -->
-<section id="registration" class="section highlight">
+<!-- SUBMISSION -->
+<section id="submission" class="section highlight">
 
   <h2>Poster Abstract Submission</h2>
 
   <p>
-    Submit your abstract. It will be automatically stored in Google Sheets.
+    Submit your abstract. All submissions are automatically sent to the organizing committee.
   </p>
 
-  <!-- GOOGLE FORM EMBED -->
-  <iframe
-    src="https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/viewform?embedded=true"
-    width="100%"
-    height="800"
-    frameborder="0">
-  </iframe>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form">
+
+    <input type="text" name="author" placeholder="Full Name (Author)" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="affiliation" placeholder="Affiliation" required>
+    <input type="text" name="title" placeholder="Poster Title" required>
+    <textarea name="abstract" rows="6" placeholder="Abstract" required></textarea>
+
+    <button type="submit">Submit Abstract</button>
+
+  </form>
 
 </section>
 
