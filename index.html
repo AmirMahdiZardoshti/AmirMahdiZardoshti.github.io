@@ -3,96 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <title>GPMLFF Workshop 2026</title>
+
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
-  <div class="brand">GPMLFF Workshop</div>
+  <div class="logo">
+    <img src="images/logo.png">
+    <span>GPMLFF Workshop</span>
+  </div>
 
   <nav>
-    <a href="#about">Home</a>
+    <a href="#about">About</a>
     <a href="#speakers">Speakers</a>
     <a href="#schedule">Schedule</a>
     <a href="#venue">Venue</a>
-    <a href="#hotels">Hotels</a>
-    <a href="#sponsors">Sponsors</a>
-    <a href="#team">Our Team</a>
-    <a class="register" href="#registration">Registration</a>
+    <a href="#team">Team</a>
+    <a href="#registration">Registration</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>General-Purpose Machine-Learned Force Fields in Theory and Practice</h1>
-  <p class="date">July 13–15, 2026, University of Luxembourg</p>
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>
+      General-Purpose Machine-Learned Force Fields in Theory and Practice
+    </h1>
+
+    <p>
+      July 13–15, 2026 • University of Luxembourg
+    </p>
+  </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
   <h2>About the Workshop</h2>
+
   <p>
-    This workshop brings together researchers developing and applying general-purpose
-    machine-learned force fields for atomistic simulations in chemistry and materials science.
-    Through lectures, tutorials, and hands-on sessions, participants will explore symmetry-aware
-    models, training strategies, validation methods, and deployment in research workflows.
+    This workshop brings together researchers developing machine-learned force fields
+    for atomistic simulations in chemistry and materials science. Participants will explore
+    theory, training, validation, and applications in real workflows.
   </p>
-</section>
-
-<!-- WHERE -->
-<section class="section">
-  <h2>Where</h2>
-  <p>On-site and online event</p>
-  <p>University of Luxembourg, Luxembourg</p>
-</section>
-
-<!-- SESSIONS -->
-<section class="section">
-  <h2>Sessions Overview</h2>
-
-  <div class="grid">
-    <div class="box">Invited Talks</div>
-    <div class="box">Hands-on Sessions</div>
-    <div class="box">Poster Session</div>
-  </div>
 </section>
 
 <!-- SPEAKERS -->
 <section id="speakers" class="section">
   <h2>Invited Speakers</h2>
 
-  <div class="speakers">
+  <div class="grid">
 
     <div class="card">
-      <h3>Prof. Dr. Klaus-Robert Müller</h3>
-      <p>Technical University of Berlin, Germany</p>
+      <img src="images/prof1.jpg">
+      <h3>Prof. Klaus-Robert Müller</h3>
+      <p>TU Berlin</p>
     </div>
 
     <div class="card">
-      <h3>Prof. Dr. Gábor Csányi</h3>
-      <p>University of Cambridge, UK</p>
-    </div>
-
-    <div class="card">
-      <h3>Dr. Stefan Chmiela</h3>
-      <p>Technical University of Berlin, Germany</p>
-    </div>
-
-    <div class="card">
-      <h3>Dr. Leonardo Medrano Sandonas</h3>
-      <p>TU Dresden, Germany</p>
-    </div>
-
-    <div class="card">
-      <h3>Dr. Yury Lysogorskiy</h3>
-      <p>ICAMS, Ruhr University Bochum</p>
-    </div>
-
-    <div class="card">
-      <h3>Ilyes Batatia</h3>
-      <p>University of Cambridge, UK</p>
+      <img src="images/prof2.jpg">
+      <h3>Prof. Gábor Csányi</h3>
+      <p>University of Cambridge</p>
     </div>
 
   </div>
@@ -100,69 +76,21 @@
 
 <!-- SCHEDULE -->
 <section id="schedule" class="section">
-  <h2>Workshop Schedule</h2>
+  <h2>Schedule</h2>
 
-  <div class="schedule">
-
-    <h3>Day 1 – Foundations (July 13)</h3>
-    <ul>
-      <li>09:00 Opening Session</li>
-      <li>09:30 Talks</li>
-      <li>11:00 Coffee Break</li>
-      <li>15:00 Hands-on Session</li>
-      <li>18:30 Poster Session</li>
-    </ul>
-
-    <h3>Day 2 – Applications (July 14)</h3>
-    <ul>
-      <li>Talks + Hands-on Sessions</li>
-    </ul>
-
-    <h3>Day 3 – Outlook (July 15)</h3>
-    <ul>
-      <li>Future Directions Round Table</li>
-      <li>Closing Session</li>
-    </ul>
-
+  <div class="box">
+    <p>Day 1: Foundations of ML Force Fields</p>
+    <p>Day 2: Applications</p>
+    <p>Day 3: Outlook & Future Directions</p>
   </div>
 </section>
 
 <!-- VENUE -->
 <section id="venue" class="section">
-  <h2>Conference Venues</h2>
+  <h2>Venue</h2>
 
-  <div class="venue">
-    <h3>Campus Limpertsberg</h3>
-    <p>Bâtiment des Sciences 0.03, Luxembourg</p>
-  </div>
-
-  <div class="venue">
-    <h3>Campus Belval</h3>
-    <p>Maison du Savoir, Esch-sur-Alzette</p>
-  </div>
-</section>
-
-<!-- HOTELS -->
-<section id="hotels" class="section">
-  <h2>Hotels</h2>
-
-  <div class="grid">
-    <div class="box">Best Western Plus Grand Hotel Victor Hugo</div>
-    <div class="box">Hotel Parc Belle-Vue</div>
-    <div class="box">Hotel Parc Plaza</div>
-    <div class="box">Novotel Luxembourg Kirchberg</div>
-  </div>
-</section>
-
-<!-- SPONSORS -->
-<section id="sponsors" class="section">
-  <h2>Sponsors</h2>
-  <div class="sponsors">
-    <span>UniLu</span>
-    <span>ERC</span>
-    <span>MSCA</span>
-    <span>FHI-aims</span>
-    <span>JACS</span>
+  <div class="box">
+    University of Luxembourg — Campus Limpertsberg & Belval
   </div>
 </section>
 
@@ -171,22 +99,45 @@
   <h2>Our Team</h2>
 
   <div class="grid">
-    <div class="box">Prof. Alexandre Tkatchenko</div>
-    <div class="box">Camilo Prada</div>
-    <div class="box">Miguel Gallegos González</div>
-    <div class="box">Adil Kabylda</div>
+
+    <div class="card">
+      <img src="images/team1.jpg">
+      <h3>Prof. Alexandre Tkatchenko</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/team2.jpg">
+      <h3>Camilo Prada</h3>
+    </div>
+
   </div>
 </section>
 
-<!-- REGISTRATION -->
-<section id="registration" class="section highlight">
-  <h2>Registration</h2>
-  <p>Registration is now closed.</p>
+<!-- REGISTRATION + ABSTRACT -->
+<section id="registration" class="section">
+
+  <h2>Poster Abstract Submission</h2>
+
+  <p>
+    Submit your poster abstract below. All submissions will be stored automatically in a Google Sheet.
+  </p>
+
+  <!-- 🔥 GOOGLE FORM (REAL SUBMISSION SYSTEM) -->
+  <iframe
+    src="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID_HERE/viewform?embedded=true"
+    width="100%"
+    height="900"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0">
+    Loading…
+  </iframe>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 GPMLFF Workshop | University of Luxembourg</p>
+  © 2026 GPMLFF Workshop • University of Luxembourg
 </footer>
 
 </body>
